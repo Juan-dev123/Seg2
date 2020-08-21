@@ -3,6 +3,8 @@ package model;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.time.LocalDate;
+import exceptions.InvalidDayToGetOut;
+import exceptions.UnderAge;
 
 public class MiniMarket {
 	private String name;

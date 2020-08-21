@@ -2,8 +2,8 @@ package ui;
 
 import java.util.Scanner;
 import model.MiniMarket;
-import model.UnderAge;
-import model.InvalidDayToGetOut;
+import exceptions.UnderAge;
+import exceptions.InvalidDayToGetOut;
 
 public class Main {
 	private MiniMarket miniMarket;

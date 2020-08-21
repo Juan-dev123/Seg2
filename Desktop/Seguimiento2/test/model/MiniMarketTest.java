@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.time.LocalDate;
 
 import org.junit.jupiter.api.Test;
+import exceptions.InvalidDayToGetOut;
+import exceptions.UnderAge;
 
 class MiniMarketTest {
 	private MiniMarket miniMarket;
