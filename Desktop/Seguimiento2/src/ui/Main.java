@@ -25,7 +25,7 @@ public class Main {
 		do {
 			System.out.println("Bienvenido, que desea hacer?");
 			System.out.println("1 Registrar el ingreso de una persona");
-			System.out.println("2 Cantidad de personas que han intentado ingresar");
+			System.out.println("2 Consultar la cantidad de personas que han intentado ingresar");
 			System.out.println("3 Salir");
 			int option=read.nextInt();
 			read.nextLine();
@@ -58,9 +58,9 @@ public class Main {
 		int cont=0;
 		do {
 			if(cont>0) {
-				System.out.print("Ingresa un numero valido 1/2/3/4");
+				System.out.println("Ingresa un numero valido 1/2/3/4");
 			}
-			System.out.println("\nSeleccione el tipo de documento de identificacion");
+			System.out.println("Seleccione el tipo de documento de identificacion");
 			System.out.println("1 Tarjeta de identidad");
 			System.out.println("2 Cedula de ciudadania");
 			System.out.println("3 Pasaporte");
