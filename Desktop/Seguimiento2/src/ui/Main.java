@@ -34,7 +34,7 @@ public class Main {
 				registerPerson();
 				break;
 			case 2:
-				getPeopleTriedEnter();
+				showPeopleTriedEnter();
 				break;
 			case 3:
 				continueLoop=false;
@@ -89,7 +89,7 @@ public class Main {
 		
 	}
 	
-	public void getPeopleTriedEnter() {
+	public void showPeopleTriedEnter() {
 		if(miniMarket.getPeopleTriedEnter()==1) {
 			System.out.println("1 persona ha intentado registrarse");
 		}else {
