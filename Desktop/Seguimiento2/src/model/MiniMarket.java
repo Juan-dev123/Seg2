@@ -39,6 +39,10 @@ public class MiniMarket {
 		return peopleTriedEnter;
 	}
 	
+	public void setPeopleTriedEnter(int number) {
+		peopleTriedEnter=number;
+	}
+	
 	public void addPersonTriedEnter() {
 		peopleTriedEnter++;
 	}

@@ -38,6 +38,8 @@ public class Main {
 				break;
 			case 3:
 				continueLoop=false;
+				miniMarket.getPeople().clear();
+				miniMarket.setPeopleTriedEnter(0);
 				System.out.println("Hasta luego");
 				break;
 			default:
