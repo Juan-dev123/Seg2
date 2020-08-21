@@ -18,11 +18,6 @@ public class Person {
 		return typeId;
 	}
 	
-	public void setTypeId(int typeId) {
-		//Falta excepciones
-		this.typeId=typeId;
-	}
-	
 	public String getNumberId() {
 		return numberId;
 	}

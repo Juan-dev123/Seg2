@@ -13,12 +13,10 @@ public class MiniMarket {
 	public MiniMarket(String name) {
 		this.name=name;
 		peopleTriedEnter=0;
+		people=new ArrayList<Person>();
 	}
 	
-	public void registerAPerson(int typeId, String numberId) throws InvalidTypeId, UnderAge{
-		if(typeId<1 || typeId>4) {
-			throw new InvalidTypeId();
-		}
+	public void registerAPerson(int typeId, String numberId) throws UnderAge, InvalidDayToGetOut{
 		if(typeId==Person.TI) {
 			throw new UnderAge();
 		}
@@ -29,13 +27,20 @@ public class MiniMarket {
 			pair=false;
 		}
 		if(pair && (currentDay%2==0)) {
-			
+			throw new InvalidDayToGetOut(pair);
 		}
-		
+		if(!pair && (currentDay%2==1)) {
+			throw new InvalidDayToGetOut(pair);
+		}
+		people.add(new Person(typeId, numberId));
 	}
 	
 	public int getPeopleTriedEnter() {
 		return peopleTriedEnter;
+	}
+	
+	public void addPersonTriedEnter() {
+		peopleTriedEnter++;
 	}
 	
 	public String getName() {
